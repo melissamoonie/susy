@@ -1,0 +1,22 @@
+body{
+	background: rgba(193,32,209,1);
+}
+
+
+main, 
+aside{
+	@include box();
+}
+
+main{
+	@include span(12);
+}
+aside{
+	@include span(12);
+}
+
+@include susy-breakpoint($large){
+	body{
+		background: $large-bg;
+	} //body
+}// large breakpoint

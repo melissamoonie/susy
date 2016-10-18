@@ -1,0 +1,9 @@
+@mixin box(){
+	background: $box-bg;
+	border: solid 1px black;
+	padding: 10px;
+
+}
+.gallery img{
+	@include gallery (4);
+}
